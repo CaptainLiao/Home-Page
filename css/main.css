@@ -284,11 +284,11 @@ body {
 	background-position: 0 0;
 	overflow: hidden;
 	background-repeat: no-repeat;
-/* 	-webkit-transition: background-position .5s ease-in;
+ 	-webkit-transition: background-position .5s ease-in;
    -moz-transition: background-position .5s ease-in;
     -ms-transition: background-position .5s ease-in;
      -o-transition: background-position .5s ease-in;
-        transition: background-position .5s ease-in; */
+        transition: background-position .5s ease-in; 
 }
 .about .myself .twitter {
 	background-image: url("../images/icn_twitter.png");
@@ -302,7 +302,7 @@ body {
  .about .myself .linkedin {
  	background-image: url("../images/icn_linkedin.png");
  }
-/*   .about .myself .twitter:hover {
+   .about .myself .twitter:hover {
 	background-position: 0 -52px;
 }
 .about .myself .fackbook:hover {
@@ -313,7 +313,7 @@ body {
 }
 .about .myself .linkedin:hover {
 	background-position: 0 -52px;
-}   */
+}   
 
 .about .intro {
 	float: left;

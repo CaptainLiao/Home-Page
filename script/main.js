@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
 	var $social = $("#about .myself span");
 	console.log($social.length);
 	$social.on('mouseover', function() {
@@ -7,4 +7,4 @@ $(function(){
 	$social.on('mouseout', function() {
 		$(this).animate({"background-positionY" : 0},1000);
 	});		
-})
+})*/
