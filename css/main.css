@@ -1,0 +1,455 @@
+body {
+	font: 14px/2 "微软雅黑",sans-serif;
+	width: 100%;
+}
+
+.comWidth {
+	width: 1200px;
+	margin: 0 auto;
+	background: url("../images/intro_bg.jpg") top left;
+}
+
+.header {
+	width: 1200px;
+	height: 610px;
+}
+
+.header .nav {
+	position: fixed;
+	width: 1200px;
+	height: 32px;
+	text-align: center;
+	background-color: #efe7dd;
+	box-shadow: 0 2px 2px #000;
+	opacity: .6;
+	filter: alpha(opacity=60);
+}
+
+.header .nav ul {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header .nav li {
+	float: left;
+}
+
+.header .nav a {
+	display: block;
+	width: 120px;
+	text-decoration: none;
+	color: #3b3939;
+	font-size: 18px;
+}
+.header .nav a:hover {
+	background-color: #931111;
+	color: #fff;
+}
+
+.banner {
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+.banner h1 {
+	font-size: 120px;
+}
+.banner h2 {
+	font-size: 70px;
+	margin-top: -80px;
+}
+
+.banner h2 span {
+	font-size: 120px;
+	margin-top: -80px;
+	color: #b46b6b;
+	display: block;
+}
+
+.banner p {
+	font-size: 60px;
+	margin-top: -20px;
+}
+
+.banner .flower {
+	width: 100%;
+	height: 56px;
+	background: transparent url("../images/flower.png") no-repeat center center;
+	margin-top: -40px;
+	position: relative;
+	-webkit-animation: myflower 2s linear infinite alternate;
+	   -moz-animation: myflower 2s linear infinite alternate;
+	    -ms-animation: myflower 2s linear infinite alternate;
+	     -o-animation: myflower 2s linear infinite alternate;
+	        animation: myflower 2s linear infinite alternate;
+}
+@keyframes myflower {
+	from {left: -70px;}
+	to {left: 70px;}
+}
+
+.banner .flower:before {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	top:26px;
+	left:300px;
+}
+
+
+.banner .flower:after {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 6px;
+	background-color: #fff;
+	position: absolute;
+	top:26px;
+	right:300px;
+}
+
+/*content*/
+
+.content {
+	font-size: 17px;
+}
+
+.bg {
+	width: 100%;
+	height: 13px;
+	background: url("../images/work_bg_bottom.png") repeat-x left bottom;
+}
+.bg2 {
+	width: 100%;
+	height: 12px;
+	background: url("../images/bg2.png") repeat-x left bottom;
+}
+
+/*work*/
+.work-bg,
+.about-bg {
+	background-color: #f1f1f1;
+	padding-bottom: 60px;
+}
+
+.work-bg .work,
+.services,
+.about,
+.contact {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.work h3,
+.services h3,
+.about h3,
+.contact h3 {
+	font-size: 30px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+.work h3:before,
+.services h3:before,
+.about h3:before,
+.contact h3:before {
+	content: "";
+	display: block;
+	width: 350px;
+	height: 4px;
+	border-top: 2px solid #9f9d9d;
+	border-bottom: 2px solid #9f9d9d;
+	position: absolute;
+	top:26px;
+	right:0;
+}
+.work h3:after,
+.services h3:after,
+.about h3:after,
+.contact h3:after {
+	content: "";
+	display: block;
+	width: 350px;
+	height: 4px;
+	border-top: 2px solid #9f9d9d;
+	border-bottom: 2px solid #9f9d9d;
+	position: absolute;
+	top:26px;
+	left:0;
+}
+
+.work-item {
+	display: inline-block;
+	*dispaly: inline;
+	zoom: 1;
+	margin-right: 24px;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.work-item img:hover {
+	box-shadow: 2px 2px 5px #000;
+}
+
+.work-noright{
+	margin-right: 0;
+}
+
+.work-item h4 {
+	color: #5c5b5b;
+	font-size: 14px;
+}
+
+.work-item p {
+	color: #8b8b8b;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/*SERVICES*/
+.serv-bg {
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 0;
+}
+
+.serv-item {
+	display: inline-block;
+	*dispaly: inline;
+	zoom: 1;
+	width: 220px;
+	margin-top: 32px;
+	padding-top: 182px;
+	margin-right: 20px;
+}
+
+.serv-item h4 {
+	font-size: 24px;
+	color: #4e4e4e;
+}
+
+.serv-item  p {
+	font-size: 14px;
+	color: #737373;
+	line-height: 1.2;
+}
+
+.serv-design {
+	background: transparent url("../images/serv_icon1.png") no-repeat center top;
+}
+.serv-dev {
+	background: transparent url("../images/serv_icon2.png") no-repeat center top;
+}
+.serv-indent {
+	background: transparent url("../images/serv_icon3.png") no-repeat center top;
+}
+.serv-wordpress {
+	margin-right: 0;
+	background: transparent url("../images/serv_icon4.png") no-repeat center top;
+}
+
+/*ABOUT*/
+.about {
+	height: 480px;
+}
+
+.about .myself {
+	width: 286px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 0;
+
+}
+.about .myself .twitter,
+ .about .myself .fackbook,
+ .about .myself .dribble,
+ .about .myself .linkedin{
+	display: inline-block;
+	position: relative;
+	*dispaly: inline;
+	zoom: 1;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 52px;
+	height: 52px;
+	background-position: 0 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+/* 	-webkit-transition: background-position .5s ease-in;
+   -moz-transition: background-position .5s ease-in;
+    -ms-transition: background-position .5s ease-in;
+     -o-transition: background-position .5s ease-in;
+        transition: background-position .5s ease-in; */
+}
+.about .myself .twitter {
+	background-image: url("../images/icn_twitter.png");
+}
+ .about .myself .fackbook {
+ 	background-image: url("../images/icn_facebook.png");
+ }
+ .about .myself .dribble {
+ 	background-image: url("../images/icn_dribble.png");
+ }
+ .about .myself .linkedin {
+ 	background-image: url("../images/icn_linkedin.png");
+ }
+/*   .about .myself .twitter:hover {
+	background-position: 0 -52px;
+}
+.about .myself .fackbook:hover {
+	background-position: 0 -52px;
+}
+.about .myself .dribble:hover {
+	background-position: 0 -52px;
+}
+.about .myself .linkedin:hover {
+	background-position: 0 -52px;
+}   */
+
+.about .intro {
+	float: left;
+	width: 346px;
+	margin-top: 60px;
+	margin-right: 20px;
+}
+.about .intro h4,
+.about .skills h4 {
+	font-size: 26px;
+	color: #4d4d4d;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+.about .intro p {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #4d4d4d;
+}
+
+.about .skills {
+	float: left;
+	width: 260px;
+	margin-top: 60px;
+}
+.about .skills p {
+	color: #fff;
+	line-height: 27px;
+	padding-left: 6px;
+	margin-top: 14px;
+}
+.about .skills .skill_0 {
+	width: 242px;
+	height: 27px;
+	background: transparent url("../images/skill1.png") no-repeat left bottom;
+}
+.about .skills .skill_1 {
+	width: 242px;
+	height: 27px;
+	background: transparent url("../images/skill2.png") no-repeat left bottom;
+}
+.about .skills .skill_2 {
+	width: 242px;
+	height: 27px;
+	background: transparent url("../images/skill3.png") no-repeat left bottom;
+}
+.about .skills .skill_3 {
+	width: 242px;
+	height: 27px;
+	background: transparent url("../images/skill4.png") no-repeat left bottom;
+}
+.about .skills .skill_4 {
+	width: 242px;
+	height: 27px;
+	background: transparent url("../images/skill5.png") no-repeat left bottom;
+}
+
+/*CONTACT*/
+.contact {
+	height: 540px;
+}
+.contact .touch {
+	width: 400px;
+	float: left;
+	margin-right: 80px;
+}
+
+.contact .info h4,
+.contact .touch h4 {
+	font-size: 26px;
+	color: #4d4d4d;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+.contact .touch p {
+	margin-top: -20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #4d4d4d;
+}
+.contact .touch input {
+	width: 340px;
+	height: 28px;
+	background-color: #f0f0ef;
+	margin-bottom: 8px;
+}
+.contact .touch textarea {
+	display: block;
+	width: 400px;
+	height: 142px;
+	background-color: #f0f0ef;
+	margin-bottom: 8px;
+}
+.contact .touch button {
+	width: 66px;
+	height: 24px;
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	border: 0;
+	background-color: #931111;
+}
+
+.contact .info {
+	width: 460px;
+	color: #4d4d4d;
+	float: left;
+	overflow: hidden;
+}
+.contact .info li {
+	padding-left: 20px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.contact .info .phone {
+	background-image: url("../images/icn_phone.png");
+
+}
+.contact .info .mail {
+	background-image: url("../images/icn_mail.png");
+}
+.contact .info .address {
+	background-image: url("../images/icn_address.png");
+}
+
+/*footer*/
+.footer {
+	font-size: 16px;
+	color: #272727;
+	text-align: center;
+}
+
+.footer .wrap {
+	background-color: #f1f1f1;
+	height: 52px;
+	padding-top: 60px;
+}
