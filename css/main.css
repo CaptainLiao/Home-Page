@@ -12,12 +12,14 @@ body {
 .header {
 	width: 1200px;
 	height: 610px;
+
 }
 
-.header .nav {
-	position: fixed;
+.nav {
+	position: absolute;
 	width: 1200px;
 	height: 32px;
+	z-index: 1000;
 	text-align: center;
 	background-color: #efe7dd;
 	box-shadow: 0 2px 2px #000;
@@ -25,23 +27,23 @@ body {
 	filter: alpha(opacity=60);
 }
 
-.header .nav ul {
+.nav ul {
 	width: 600px;
 	margin: 0 auto;
 }
 
-.header .nav li {
+.nav li {
 	float: left;
 }
 
-.header .nav a {
+.nav a {
 	display: block;
 	width: 120px;
 	text-decoration: none;
 	color: #3b3939;
 	font-size: 18px;
 }
-.header .nav a:hover {
+.nav a:hover {
 	background-color: #931111;
 	color: #fff;
 }
@@ -85,8 +87,8 @@ body {
 	        animation: myflower 2s linear infinite alternate;
 }
 @keyframes myflower {
-	from {left: -70px;}
-	to {left: 70px;}
+	from {left: -50px;}
+	to {left: 50px;}
 }
 
 .banner .flower:before {
@@ -115,6 +117,7 @@ body {
 /*content*/
 
 .content {
+	position: relative;
 	font-size: 17px;
 }
 
@@ -193,6 +196,12 @@ body {
 	margin-top: 32px;
 	text-align: center;
 }
+.work-item p {
+	width: 290px;
+}
+.work-item h4 {
+	font-weight: bold;
+}
 
 .work-img {
 	position: relative;
@@ -206,7 +215,10 @@ body {
 	height: 184px;
 	border: 4px solid #ccc;
 }
-.work-img:before {
+.work-img:hover {
+	box-shadow: 10px 10px 10px #000;
+}
+/* .work-img:before {
 	content: "";
 	z-index: -1;
 	position: absolute;
@@ -229,7 +241,7 @@ body {
 	bottom: 0;
 	transform: skew(10deg) rotate(6deg);
 	box-shadow: 0 8px 12px rgba(0,0,0,1);
-}
+} */
 
 .work-noright{
 	margin-right: 0;
@@ -277,16 +289,32 @@ body {
 
 .serv-design {
 	background: transparent url("../images/serv_icon1.png") no-repeat center top;
+	transition: .15s;
+}
+.serv-design:hover {
+	transform: scale(1.1);
 }
 .serv-dev {
 	background: transparent url("../images/serv_icon2.png") no-repeat center top;
+	transition: .15s;
+}
+.serv-dev:hover {
+	transform: scale(1.1);
 }
 .serv-indent {
 	background: transparent url("../images/serv_icon3.png") no-repeat center top;
+	transition: .15s;
+}
+.serv-indent:hover {
+	transform: scale(1.1);
 }
 .serv-wordpress {
 	margin-right: 0;
 	background: transparent url("../images/serv_icon4.png") no-repeat center top;
+	transition: .15s;
+}
+.serv-wordpress:hover {
+	transform: scale(1.1);
 }
 
 /*ABOUT*/
